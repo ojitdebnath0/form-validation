@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From validation</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main" id="modal">
+        <div class="from-group">
+            <div class="fb-text">
+                <div class="text">
+                    <h1>Sign Up <span id="close">&times;</i></span></h1>
+                </div>
+                <div><p>It's quick and easy.</p></div>
+            </div>
+            <form action="">
+                <div class="towName">
+                    <div class="first">
+                        <input type="text" placeholder="First name" id="userName">
+                        <label id="userNameErr" class="red"></label>
+                    </div>
+                    <div class="last">
+                        <input type="text" placeholder="Sure name" id="sureName">
+                        <label id="sureNameErr" class="red"></label>
+                    </div>
+                </div>
+                <div class="full-input">
+                    <div class="full">
+                        <input type="email" placeholder="Enter your mail or phone" id="userMail">
+                        <label id="userMailErr" class="red"></label>
+                    </div>
+                    <div class="full">
+                        <input type="password" placeholder="Enter your password" id="userPass">
+                        <label id="userPassErr" class="red"></label>
+                    </div>
+
+                    <div class="full">
+                        <input type="password" placeholder="Enter your confirm password" id="userConPass">
+                        <label id="userConPassErr" class="red"></label>
+                    </div>
+                </div>
+                <div class="date-title"><label for="">Date Of Birth <i class="fas fa-question-circle"></i></label></div>
+                <div class="date">
+                    <select name="" id="">
+                        <option value="">Select date</option>
+                        <script>
+                            for(date=1;date <= 31;date++){
+                                document.write("<option>"+date+"</option>");
+                            }
+                        </script>
+                    </select>
+    
+                    <select name="" id="">
+                        <option value="">Selcet month</option>
+                        <option value="">Jnuary</option>
+                        <option value="">February</option>
+                        <option value="">March</option>
+                        <option value="">April</option>
+                        <option value="">May</option>
+                        <option value="">June</option>
+                        <option value="">July</option>
+                        <option value="">August</option>
+                        <option value="">September</option>
+                        <option value="">October</option>
+                        <option value="">November</option>
+                        <option value="">December</option>
+                    </select>
+    
+    
+                    <select name="" id="">
+                        <option value="">Select year</option>
+                        <script>
+                            for(year=2021;year >= 1905;year--){
+                                document.write("<option>"+year+"</option>");
+                            }
+                        </script>
+                    </select>
+                </div>
+                <div class="date-title"><label for="">Gender <i class="fas fa-question-circle"></i></label></div>
+                <div class="gender">
+                    <div class="gen1">Male<input type="radio" name="gender"></div>
+                    <div class="gen1">Female<input type="radio" name="gender"></div>
+                    <div class="gen1">Custom<input type="radio" name="gender"></div>
+                </div>
+                <div class="policy">
+                    <small>By clicking Sign Up, you agree to our Terms, <a href="#">Data Policy and Cookie Policy.</a>
+                         You may receive SMS notifications from us and can opt out at any time.</small>
+                </div>
+                <div class="btn"><button type="submit" onclick=" return btnErr();">Sign UP</button></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="form-clik">
+        <input type="text" name="" id="" placeholder="Enter your user name">
+        <input type="text" name="" id="" placeholder="Enter your password">
+        <a href="#">Log in</a>
+        <button id="trigger">Create a facebook account</button>
+    </div>
+
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
